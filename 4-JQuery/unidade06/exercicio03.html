@@ -10,7 +10,27 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
+            // function aplicarCorAzul() {
+            //     $('#janela').css('background-color','blue');
+            // };
+            // function aplicarCorVermelho() {
+            //     $('#janela').css('background-color','red');
+            // };
+            // function aplicarCorVerde() {
+            //     $('#janela').css('background-color','green');
+            // };
 
+            function aplicarCor(c) {
+                //$cor = c.data.cor;
+                $('#janela').css('background-color',c.data.cor);
+                $('#janela').css('width',c.data.largura);
+            }
+
+            $(function() {
+                $('#botaoazul').on('mouseover',{cor:'blue',largura:'250px'},aplicarCor);
+                $('#botaovermelho').on('mouseover',{cor:'red',largura:'350px'},aplicarCor);
+                $('#botaoverde').on('mouseover',{cor:'green',largura:'450px'},aplicarCor);
+            });
 	 	</script>        
     </head>
     
