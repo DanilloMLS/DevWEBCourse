@@ -6,6 +6,29 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
+            $(function(){
+                $('#cursohtml').click(function() {
+                    alert("Clicou no botão");
+                });
+
+                function mostrarMensagem() {
+                    alert("Passou o mouse");
+                    $('#cursocss').off('mouseover',mostrarMensagem);
+                }
+
+                function mostrarMensagem2() {
+                    alert("Clicou");
+                }
+
+                function mostrarMensagem3() {
+                    alert("Clicou em JQuery");
+                }
+
+                $('#cursocss').on('mouseover',mostrarMensagem);
+                $('#cursocss').on('click',mostrarMensagem2);
+                $('#cursojquery').on('click',mostrarMensagem3);
+            });
+
 					
 		</script>        
     </head>
@@ -13,7 +36,7 @@
     <body>
         <input type="button" id="cursohtml" value="Curso HTML5" />
         <input type="button" id="cursocss" 	value="Curso CSS3" />
-        
+        <input type="button" id="cursojquery" value="Curso JQuery"/>
         
     </body>
 
