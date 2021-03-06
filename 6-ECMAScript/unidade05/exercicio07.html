@@ -4,7 +4,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.min.js"></script>
         <script type="text/babel">
         
-            var jogador = {
+            /* var jogador = {
                 nome:"Messi",
                 habilidades:["chutar","driblar","correr","fazer gols"],
                 escreverHabilidades: function() {
@@ -13,9 +13,20 @@
                         console.log(_this.nome + " é craque em " + skill);   
                     });
                 }
-            }
+            } */
             
-            jogador.escreverHabilidades();
+            //jogador.escreverHabilidades();
+
+            var {tipo,preco,tampas} = {
+                tipo:"Caneta",
+                cor:"Azul",
+                marca:"Bic",
+                preco:2,
+                tampas:["Redonda","Quadrada"]
+            }
+
+            console.log(tipo);
+            console.log(tampas[0]);
 
         </script>
     </head>
