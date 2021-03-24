@@ -1,2 +1,2 @@
 # DevWEBCourse
-Exercícios práticos do um curso de programação WEB
+Exercícios práticos de HTML5, CSS3 e JavaScript
